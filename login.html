@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http--equiv="x--UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Login Kesehatan Mu</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Form Login</header>
+        <form action="#">
+          <input type="text" placeholder="Masukan username" id="username" required/>
+          <input type="password" placeholder="Masukan password" id="password" required />
+          <a href="#">Lupa Password?</a><br><br>
+          <input type="button" value="Login" class="button" onclick="authenticate()" />
+        </form>
+        <div class="signup dropdown">
+          <span class="signup"
+            >Belum punya akun?
+            <label for="check">Daftar</label>
+          </span>
+          <div class="dropdown-content">
+            <p>username: admin
+              password: 12345</p>
+          </div>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Form Registrasi</header>
+        <form action="#">
+          <input type="text" placeholder="Masukan username" id="reg-username" for="reg-username" />
+          <input type="password" placeholder="Masukan password" id="reg-password" for="reg-password" />
+          <input type="email" placeholder="Masukan  email" id="reg-email" for="reg-email" />
+          <input type="button" class="button" value="Sign Up" onclick="registerUser()" />
+        </form>
+        <div class="signup dropdown">
+          <span class="signup"
+            >Sudah punya akun?
+            <label for="check">Login</label>
+          </span>
+          <div class="dropdown-content">
+            <p>username: admin
+              password: 12345</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

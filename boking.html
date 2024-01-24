@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Kesehatan Mu</title>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  </head>
+  <body>
+    <form id="test-form" class="white-popup-block mfp-hide">
+      <div class="popup_box">
+        <div class="popup_inner">
+          <h3>Make an Appointment</h3>
+          <form action="#" id="appointment-form">
+            <div class="row">
+              <div class="col-xl-6">
+                <input id="datepicker" placeholder="Pick date" />
+              </div>
+              <div class="col-xl-6">
+                <input id="datepicker2" placeholder="Suitable time" />
+              </div>
+              <div class="col-xl-6">
+                <select class="form-select wide" id="department-select">
+                  <option data-display="Select Department">Department</option>
+                  <option value="1">Mengasuh Anak</option>
+                  <option value="2">kehamilan</option>
+                  <option value="3">Nutrisi</option>
+                  <option value="4">Kesehatan Kulit</option>
+                  <option value="5">Kesehatan Mental</option>
+                  <option value="6">Hidup Sehat</option>
+                </select>
+              </div>
+              <div class="col-xl-6">
+                <select class="form-select wide" id="doctor-select">
+                  <option data-display="Doctors">Doctors</option>
+                  <option value="1">Dr. Kimi hime</option>
+                  <option value="2">Dr. Albert Ainsten</option>
+                  <option value="3">Dr. Drako lois</option>
+                  <option value="4">Dr. Ninpo Siu</option>
+                  <option value="5">Dr. Asep Saepulloh</option>
+                  <option value="6">Dr. Cateezz Mqui</option>
+                  <option value="7">Dr. Azzam qoid</option>
+                  <option value="8">Dr. Mia Khali Kusuma</option>
+                </select>
+              </div>
+              <div class="col-xl-6">
+                <input type="text" placeholder="Name" id="name-input" />
+              </div>
+              <div class="col-xl-6">
+                <input type="text" placeholder="Phone no." id="phone-input" />
+              </div>
+              <div class="col-xl-12">
+                <input type="email" placeholder="Email" id="email-input" />
+              </div>
+              <div class="col-xl-12">
+                <button type="submit" class="boxed-btn3">Confirm</button>
+              </div>
+            </div>
+          </form>
+          <div id="result-container" style="display: none">
+            <h4>Appointment Details:</h4>
+            <p id="result-date"></p>
+            <p id="result-time"></p>
+            <p id="result-department"></p>
+            <p id="result-doctor"></p>
+            <p id="result-name"></p>
+            <p id="result-phone"></p>
+            <p id="result-email"></p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="js/validation.js"></script>
+  </body>
+</html>
